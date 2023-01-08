@@ -36,4 +36,6 @@ jobs:
           --data targetPort=${{ secrets.DOCKER_CONTAINER_PORT }} \
           --data startDate=${{ secrets.PROJECT_START_DATE }} \
           --data endDate=${{ secrets.PROJECT_END_DATE }} \
-          --data healthCheck=${{ secrets.HEALTH_CHECK_PATH }}
+          --data healthCheckPath=${{ secrets.HEALTH_CHECK_PATH }} \
+          --data healthCheckProtocol=${{ secrets.HEALTH_CHECK_PROTOCOL }} \
+          --data healthCheckPort=${{ secrets.HEALTH_CHECK_PORT }}
