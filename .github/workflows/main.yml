@@ -38,4 +38,5 @@ jobs:
           --data endDate=${{ secrets.PROJECT_END_DATE }} \
           --data healthCheckPath=${{ secrets.HEALTH_CHECK_PATH }} \
           --data healthCheckProtocol=${{ secrets.HEALTH_CHECK_PROTOCOL }} \
-          --data healthCheckPort=${{ secrets.HEALTH_CHECK_PORT }}
+          --data healthCheckPort=${{ secrets.HEALTH_CHECK_PORT }} \
+          --data projectInfo=${{ secrets.PROJECT_INFO_JSON }}
