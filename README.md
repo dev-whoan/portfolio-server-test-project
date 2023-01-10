@@ -1,2 +1,3 @@
 # portfolio-server-test-project
-Test Project For Portfolio Server. Will be Dockerized
+
+Container for testing [Autonomic Portfolio](https://github.com/dev-whoan/portfolio-server)
