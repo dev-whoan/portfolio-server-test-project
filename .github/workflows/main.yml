@@ -27,6 +27,9 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/${{ secrets.DOCKER_IMAGE }}:latest
       -
+        name: Echo Json 
+        run: echo ${{ secrets.PROJECT_INFO_JSON }}
+      -
         name: Send Hook To NodeJS Server
         run: |
           curl --request POST ${{ secrets.NODEJS_WEBHOOK_URL }} \
