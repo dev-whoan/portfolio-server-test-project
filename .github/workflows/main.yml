@@ -39,4 +39,72 @@ jobs:
           --data healthCheckPath=${{ secrets.HEALTH_CHECK_PATH }} \
           --data healthCheckProtocol=${{ secrets.HEALTH_CHECK_PROTOCOL }} \
           --data healthCheckPort=${{ secrets.HEALTH_CHECK_PORT }} \
-          --data projectInfo=${{ secrets.PROJECT_INFO_JSON }}
+          --data projectInfo='{
+"project-role": "Project Manager, Fullstack Developed",
+"project-preview": "This project is about Autonomic Portfolio Server and it can be split into 2 parts, Client which you are just interacting, and Server the Client is currently communicating with.<br>It generates Portoflio Web Page with Github Repositories. There are two prerequisites to use this portoflio server.<br>First, client must use AWS. The Portfolio Server requires AWS IAM information, login id and key. Second, the projects to operate using Portfolio Server.<br>The client need to add projects to Github, and add a Git Actions Workflows,  Git Secrets with required Parameters. And when the Github Actions triggered, the repository will be built into Docker Image, and pushed.<br>Hence, the AWS can use the container, and the Portfolio Server becomes being able to provide demo of the project.",
+"project-detail": {
+"repo": "https://github.com/dev-whoan/",
+"details": [
+	{
+		"img": "/img/autonomic-portfolio/main-preview.png",
+		"text": "This project is about Autonomic Portfolio Server and it can be split into 2 parts, Client which you are just interacting, and Server the Client is currently communicating with.<br>It generates Portoflio Web Page with Github Repositories. There are two prerequisites to use this portoflio server.<br>First, client must use AWS. The Portfolio Server requires AWS IAM information, login id and key. Second, the projects to operate using Portfolio Server.<br>The client need to add projects to Github, and add a Git Actions Workflows,  Git Secrets with required Parameters. And when the Github Actions triggered, the repository will be built into Docker Image, and pushed.<br>Hence, the AWS can use the container, and the Portfolio Server becomes being able to provide demo of the project."
+	},
+	{
+		"img": "/img/autonomic-portfolio/architecture.png",
+		"text": "Architecture Explain"
+	},
+	{
+		"img": "/img/autonomic-portfolio/create-demo-pipeline.png",
+		"text": "Pipeline Explain"
+	}
+],
+"stacks": [
+	{
+		"title": "NodeJS",
+		"info": [
+			"Give Responsibility to Right Object:: Because NodeJS is using Event Loop Architecture, I can allocate right Callback functions to each requests, so I only need to managing the Object which holds the Callback functions.",
+			"Cost-effective with Fullstack JS:: Because it is based on Javascript, I can build Fullstack Application in a short time",
+			"And so on..."
+		]
+	},
+	{
+		"title": "AWS-SDK, NodeJS Library",
+		"info": [
+			"Library that provided by Amazon. It let me be able to use AWS services easily through NodeJS Server.",
+			"Providing Service for Provisioning Cloud Infrastructure of Projects' Demos",
+			"VPC, ...."
+		]	
+	},
+	{
+		"title": "HTML + CSS + JS",
+		"info": [
+			"Portfolio Web Page",
+			"And so on..."
+		]	
+	}
+],
+"roles": [
+	{
+		"title": "Project Manager",
+		"subtitle": "dd",
+		"info": [
+			"ETC.."
+		]
+	}
+],
+"troubles": [
+	{
+		"title": "NodeJS",
+		"subtitle": "dd",
+		"info": [
+			"aws-sdk is suck"
+		]
+	}
+]
+},
+"project-stack": "NodeJS, HTML + CSS + Vanilla Javascript, AWS-SDK",
+"project-thumbnails": [
+"/img/autonomic-portfolio/tree.png",
+"/img/autonomic-portfolio/main-preview.png"
+]
+}'
